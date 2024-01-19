@@ -1,38 +1,10 @@
-# create-svelte
+# SvelteKit Workers in SSG mode
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
+```shell
 npm run build
+npm run preview
+open http://localhost:4173/
 ```
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+<img width="1582" alt="Screenshot 2024-01-18 at 7 37 07 PM" src="https://github.com/developermindsetcom/spa-bug/assets/154647374/7263a59a-8421-431d-a5e0-07178c3bb00e">
+<img width="1582" alt="Screenshot 2024-01-18 at 7 37 29 PM" src="https://github.com/developermindsetcom/spa-bug/assets/154647374/fef60273-7b5f-4291-8651-dda481c5a44f">
