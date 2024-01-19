@@ -4,7 +4,8 @@ import worker_handler from "$lib/worker_handler.js";
 
 export const prerender = false;
 export const ssr = false;
-export const load = ()=>{
+export const load = async ()=>{
+    await worker_handler.loadWorker();
     worker_handler.sayHello();
     return {};
 }
