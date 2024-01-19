@@ -1,7 +1,12 @@
-import Worker from '$lib/worker?worker';
-const worker = new Worker();
+let worker: Worker | undefined = undefined;
+
 export default {
+    async loadWorker() {
+        const SyncWorker = await import('$lib/worker?worker');
+        worker = new SyncWorker.default();
+    },
+
     sayHello(){
-        worker.postMessage('');
+        worker && worker.postMessage('');
     }
 }
