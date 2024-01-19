@@ -10,13 +10,14 @@ const config = {
         sourcemap: true
     },
     kit: {
+        outDir: './dist',
         adapter: adapter({
             fallback: 'app.html',
             strict: true
         }),
         prerender: {
             crawl: false,
-            entries: []
+            entries: ['/', '/about', '/sverdle/how-to-play']
         }
     }
 };
